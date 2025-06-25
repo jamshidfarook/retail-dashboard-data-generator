@@ -1,20 +1,16 @@
 import pandas as pd
 import numpy as np
 
-# Number of rows
 num_rows = 23373
 
-# Set seed for reproducibility
 np.random.seed(42)
 
-# Define values
 regions = ['West', 'East', 'South', 'Central']
 segments = ['Consumer', 'Corporate', 'Home Office']
 categories = ['Phones', 'Chairs', 'Binders', 'Storage', 'Accessories']
 states = ['California', 'New York', 'Texas', 'Washington', 'Florida']
 months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
 
-# Generate data
 data = {
     'Order ID': [f'ORD{100000 + i}' for i in range(num_rows)],
     'Region': np.random.choice(regions, num_rows),
@@ -28,7 +24,6 @@ data = {
     'Returns': np.random.choice([0, 1], num_rows, p=[0.95, 0.05])
 }
 
-# Create DataFrame
 df = pd.DataFrame(data)
 
 # Save to CSV
