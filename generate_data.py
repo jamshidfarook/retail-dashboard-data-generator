@@ -26,7 +26,6 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Save to CSV
 df.to_csv('Retail_Supply_Chain_Data.csv', index=False)
 
 print("CSV file 'Retail_Supply_Chain_Data.csv' generated successfully.")
