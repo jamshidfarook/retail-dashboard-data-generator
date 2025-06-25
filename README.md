@@ -1,6 +1,3 @@
-# retail-dashboard-data-generator
-Python script to generate synthetic retail supply chain CSV data
-
 # Retail Supply Chain Data Generator
 
 This Python script generates a CSV file with 23,373 rows of sample retail data for dashboards and analytics.
